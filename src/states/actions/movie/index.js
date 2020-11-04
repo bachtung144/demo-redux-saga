@@ -1,4 +1,4 @@
-import {FETCH_FAILED, FETCH_MOVIES, FETCH_SUCCEEDED, ADD_MOVIE} from './types'
+import {FETCH_FAILED, FETCH_MOVIES, FETCH_SUCCEEDED} from './types'
 
 export const fetchMoviesAction = (sort) => {
     return {
@@ -21,10 +21,5 @@ export const fetchFailedAction = (payload) => {
     }
 }
 
-export const addMovieAction = (payload) => {
-    return {
-        type : ADD_MOVIE,
-        payload
-    }
-}
+
 
